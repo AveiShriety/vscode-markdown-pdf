@@ -31,6 +31,8 @@
     "onCommand:extension.markdown-pdf.png",
     "onCommand:extension.markdown-pdf.jpeg",
     "onCommand:extension.markdown-pdf.all",
+    "onCommand:extension.markdown-pdf.allMD_html",
+    "onCommand:extension.markdown-pdf.allMD_pdf",
     "onLanguage:markdown"
   ],
   "main": "./extension",
@@ -65,6 +67,16 @@
         "command": "extension.markdown-pdf.all",
         "title": "Markdown PDF: Export (all: pdf, html, png, jpeg)",
         "group": "markdown-pdf"
+      },
+      {
+        "command": "extension.markdown-pdf.allMD_html",
+        "title": "Markdown PDF: Export (allMD_html)",
+        "group": "markdown-pdf"
+      },
+      {
+        "command": "extension.markdown-pdf.allMD_pdf",
+        "title": "Markdown PDF: Export (allMD_pdf)",
+        "group": "markdown-pdf"
       }
     ],
     "menus": {
@@ -92,6 +104,14 @@
         {
           "when": "resourceLangId == markdown",
           "command": "extension.markdown-pdf.all"
+        },
+        {
+          "when": "resourceLangId == markdown",
+          "command": "extension.markdown-pdf.allMD_html"
+        },
+        {
+          "when": "resourceLangId == markdown",
+          "command": "extension.markdown-pdf.allMD_pdf"
         }
       ],
       "editor/context": [
@@ -124,6 +144,16 @@
           "when": "resourceLangId == markdown",
           "command": "extension.markdown-pdf.all",
           "group": "markdown-pdf@6"
+        },
+        {
+          "when": "resourceLangId == markdown",
+          "command": "extension.markdown-pdf.allMD_html",
+          "group": "markdown-pdf@7"
+        },
+        {
+          "when": "resourceLangId == markdown",
+          "command": "extension.markdown-pdf.allMD_pdf",
+          "group": "markdown-pdf@8"
         }
       ]
     },
